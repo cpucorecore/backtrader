@@ -7,11 +7,14 @@ pip install backtrader
 ```
 
 ## data
-download data from 'https://www.cryptodatadownload.com/data/binance/' being saved in data/Binance_BTCUSDT_d.csv.raw.
-do lines reverse and save data in data/Binance_BTCUSDT_d.csv
+download data from 'https://www.cryptodatadownload.com/data/binance/' being saved in Binance_BTCUSDT_1h.csv.raw
+use preparecsv.py to prepare data into data/Binance_BTCUSDT_1h.csv
 ```shell
-python reversefile.py
+python pretreat.py ./data/Binance_BTCUSDT_1h.csv.raw ./data/Binance_BTCUSDT_1h.csv 
 ```
 
-## execute main in IDE(PyCharm) you will see the chart like data/Figure_0.png
+## execute
+```shell
+python main.py 2021-01-01 2021-07-01
+```
 
