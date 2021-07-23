@@ -15,6 +15,5 @@ python pretreat.py ./data/Binance_BTCUSDT_1h.csv.raw ./data/Binance_BTCUSDT_1h.c
 
 ## execute
 ```shell
-python main.py 2021-01-01 2021-07-01
+python main.py ./data/Binance_BTCUSDT_1h.csv 2021-01-01 2021-07-01
 ```
-
