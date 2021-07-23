@@ -20,3 +20,12 @@ class Sma3(bt.Strategy):
         else:
             if self.sma5 < self.sma34:
                 self.close()
+
+    def notify_order(self, order):
+        pass
+
+    def notify_trade(self, trade):
+        pass
+
+    def notify_fund(self, cash, value, fundvalue, shares):
+        print('cash:', cash, '|value:', value, '|fundvalue:', fundvalue, '|shares:', shares)
